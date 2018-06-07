@@ -11,4 +11,10 @@ button {
     color: #4fc08d;
     border: #4fc08d 1px solid;
     transition: 250ms ease-out;
+    @include mediatablet {
+        margin-bottom: 1em;
+    }
+    &:hover {
+        color: white;
+    }
 }
