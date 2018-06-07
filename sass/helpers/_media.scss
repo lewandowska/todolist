@@ -1,0 +1,18 @@
+$mobilePortraitBreakpoint: 600px;
+$tabletPortraitBreakpoint: 850px;
+
+$tabletPortrait: "all and (max-width: #{$tabletPortraitBreakpoint})";
+$mobilePortrait: "all and (max-width: #{$mobilePortraitBreakpoint})";
+
+
+@mixin mediatablet() {
+    @media #{$tabletPortrait} {
+        @content;
+    }
+}
+
+@mixin mediamobile() {
+    @media #{$mobilePortrait} {
+        @content;
+    }
+}
