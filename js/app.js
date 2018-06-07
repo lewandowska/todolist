@@ -1,5 +1,5 @@
 window.onload = function () {
-    
+
 "use strict";
 
     new Vue({
@@ -26,12 +26,12 @@ window.onload = function () {
                 }
             },
 
-
             clearList: function () {
                 this.tasks = [
 
                 ];
             },
+            
             removeLast: function() {
                 this.tasks.pop();
             }

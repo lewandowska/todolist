@@ -1,10 +1,13 @@
 .main-container {
 	width: 50%;
 	margin: 0 auto;
-	background-color: #000071;
-	min-height: 200px;
+	border: 1px solid white;
+	background-color: rgba(0,0,0,0.3);
+	min-height: 300px;
 	padding: 50px;
 	margin-top: 100px;
+	border-radius: 20px;
+
 	.text-input {
 		width: 100%;
 	    font-size: 14px;
@@ -12,16 +15,24 @@
 	    border-radius: 2em;
 	    padding: 0.75em 1.5em;
 	    background: none;
-	    font-family: "Source Sans Pro", sans-serif;
 	    border: #e3e3e3 1px solid;
 	    color: white;
 	    transition: border 250ms ease-out;
+	    width: 100%;
+	    margin-bottom: 2em;
 	}
 	::placeholder {
 	    color: white;
 	    opacity: 1; /* Firefox */
 	}
+	.list {
+		margin-top: 2em;
+	}
 	.list-item {
 		color: white;
+		margin: 0 .5em;
+		li {
+			line-height: 1.4;
+		}
 	}
 }
